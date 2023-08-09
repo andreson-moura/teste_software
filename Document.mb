@@ -1,0 +1,43 @@
+```markdown
+# Execução de Testes Automatizados - Documentação
+
+Esta documentação descreve como executar os testes automatizados para a aplicação da loja de produtos (Product Store) com base no código fornecido.
+
+## Pré-requisitos
+
+- **Node.js e NPM**: Certifique-se de ter o Node.js (que inclui o NPM - Node Package Manager) instalado em seu sistema. Você pode baixá-lo em [https://nodejs.org/](https://nodejs.org/).
+
+## Passos para Executar os Testes
+
+### Instalação das Dependências
+
+1. Abra um terminal e navegue até o diretório onde o código de teste está localizado.
+2. Execute o seguinte comando para instalar as dependências necessárias (Cypress):
+
+```bash
+npm install cypress --save-dev
+```
+
+### Execução dos Testes
+
+1. Com as dependências instaladas, você pode executar os testes automatizados. Execute o seguinte comando no terminal:
+
+```bash
+npx cypress run
+```
+
+Isso executará todos os testes no modo de linha de comando. Os resultados dos testes serão exibidos no terminal, incluindo informações sobre testes aprovados e falhados.
+
+2. Se você preferir executar os testes usando a interface gráfica do Cypress, você pode executar o seguinte comando:
+
+```bash
+npx cypress open
+```
+
+Isso abrirá a interface do Cypress, onde você pode selecionar e executar testes individuais.
+
+## Considerações Finais
+
+- Certifique-se de que a aplicação esteja em execução e acessível através do URL [https://www.demoblaze.com/index.html](https://www.demoblaze.com/index.html) antes de executar os testes.
+
+- Os testes automatizados fornecidos cobrem três cenários diferentes na aplicação da loja de produtos: acesso à página de contato, busca de produtos em diferentes categorias e adição/remoção de produtos ao carrinho. Certifique-se de revisar o código dos testes para entender as ações e verificações realizadas em cada cenário.
